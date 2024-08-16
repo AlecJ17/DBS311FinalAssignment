@@ -1,6 +1,4 @@
-const API_URL = window.location.hostname.includes('localhost')
-    ? 'http://localhost:8080/students'
-    : `${window.location.origin}/students`;
+const API_URL = `${window.location.origin}/students`;
 
 // Function to display a message
 function showMessage(message, type = 'success') {
@@ -177,7 +175,8 @@ function openTab(evt, tabName) {
 document.getElementsByClassName('tablinks')[0].click();
 
 function fetchTopStudents() {
-    fetch('http://localhost:8080/top-students')
+    const topStudentsURL = `${window.location.origin}/top-students`;
+    fetch(topStudentsURL)
         .then(response => response.json())
         .then(students => {
             const tbody = document.querySelector('#topStudentsTable tbody');
