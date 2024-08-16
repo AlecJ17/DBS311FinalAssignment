@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Records Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Tab links -->
+<div class="tab">
+    <button class="tablinks" onclick="openTab(event, 'TopStudents')">Top 10 Students</button>
+    <button class="tablinks" onclick="openTab(event, 'StudentManagement')">Student Management</button>
+</div>
+
+<!-- Tab content for Top 10 Students -->
+<div id="TopStudents" class="tabcontent">
+    <h3>Top 10 Students by Average Grade</h3>
+    <table id="topStudentsTable">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Average Grade</th>
+        </tr>
+        </thead>
+        <tbody>
+        <!-- Top students rows will be added here -->
+        </tbody>
+    </table>
+</div>
+
+<!-- Tab content for Student Management -->
+<div id="StudentManagement" class="tabcontent" style="display:none">
+    <h1>Student Records Management</h1>
+    <!-- Form to add a new student -->
+    <form id="addStudentForm">
+        <h3>Add New Student</h3>
+        <input type="text" id="name" placeholder="Name" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="number" id="age" placeholder="Age" required>
+        <select id="status" required>
+            <option value="active">Active</option>
+            <option value="graduated">Graduated</option>
+            <option value="dropped">Dropped</option>
+        </select>
+        <button type="submit">Add Student</button>
+    </form>
+
+    <!-- Sections to display student records -->
+    <h3>Active Students</h3>
+    <table id="activeStudentsTable">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Age</th>
+            <th>Status</th>
+            <th>Actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <!-- Active student rows will be added here -->
+        </tbody>
+    </table>
+
+    <h3>Graduated Students</h3>
+    <table id="graduatedStudentsTable">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Age</th>
+            <th>Status</th>
+        </tr>
+        </thead>
+        <tbody>
+        <!-- Graduated student rows will be added here -->
+        </tbody>
+    </table>
+
+    <h3>Dropped Students</h3>
+    <table id="droppedStudentsTable">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Age</th>
+            <th>Status</th>
+        </tr>
+        </thead>
+        <tbody>
+        <!-- Dropped student rows will be added here -->
+        </tbody>
+    </table>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

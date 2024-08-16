@@ -1,0 +1,12 @@
+1.	MongoDB Indexing and Search Optimization
+
+To test the MongoDB Indexing and Search Optimization, I will be using the following steps:
+
+Run "node testPerformance.js" to test the performance of the MongoDB Indexing and Search Optimization.
+
+2.  MongoDB Validation
+
+To test the MongoDB Validation,run the following commands:
+
+First run "node applySchemaValidation.js"
+Second run " node testValudation.js"
