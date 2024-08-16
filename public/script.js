@@ -1,4 +1,6 @@
-const API_URL = 'http://localhost:8080/students';
+const API_URL = window.location.hostname.includes('localhost')
+    ? 'http://localhost:8080/students'
+    : `${window.location.origin}/students`;
 
 // Function to display a message
 function showMessage(message, type = 'success') {
