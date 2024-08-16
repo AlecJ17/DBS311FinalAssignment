@@ -31,7 +31,7 @@ This project was developed as a MongoDB-based app for Seneca Polytechnic's DBS31
     This part of the project is satisfied by creating a combination of javascript, html, and css file.
     Run **"node app.js"** locally or for much easier access use this link to see how this part is implemented **https://dbs-311-final-      
     assignment-78ox-5jm1ty3sk-alecs-projects-7c3a0dec.vercel.app/**.
-    This is the most crucial part of this project because almost all of the task are in this website. You can retrieve, modify/update and delete all of the students here.
+    This is the most crucial part of this project because almost all of the task are in this website. This project makes the endpoint testing much more easier because you can retrieve, modify/update and delete all of the students here without doing a more complex API test.
 
      
 - 4. **Data Visualization****: Created visualizations using MongoDB Charts to provide insights into student data, such as enrollment trends and grade distributions.
